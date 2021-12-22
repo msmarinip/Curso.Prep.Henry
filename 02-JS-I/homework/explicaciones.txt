@@ -1,0 +1,56 @@
+	* Variables:
+        Una variable es un lugar en el que podés almacenar algo para usar después. Es como tener un cajón en el que guardás algo (una cosa), digamos un tenerdor.
+        El tenedor está en el cajón (tu variable) y cuando lo necesitás abrís el cajón (llamás la variable) y usás eso que está guardado, el tenedor.
+        El cajón podría después guardar otra cosa, un cuchillo, una cuchara. Lo conveniente sería definir bien que tipo de cosas vas a guardar. Podrías poner un zapato,
+        pero no es una práctica recomendada mezclar calzados con cubiertos.
+        Con las variables pasa lo mismo, primero tenés que saber para qué la querés y definirla con un nombre bien descriptivo.
+            var cajonCubiertos;
+        y el valor de la variable podés asignarlo en el momento en que la creás o después. Si no lo asignás en el momento de la creación (tendrías el cajón vacío)
+        al llamarla te respondería 'undefined'.
+            var cajonCubiertos = 'tenedor'; => en este caso definí la variable cajonCubiertos con el valor 'tenedor'.
+        Mas adelante podría cambiar el valor de cajonCubiertos y asignarle el valor 'cuchillo'
+            cajonCubiertos = cuchillo; => En este caso no tuve que escribir delante del nombre var porque ya estaba definida.
+        Si supieras que en tu cajón siempre vas a guardar 'tenedor' en vez de definirla con var podrías definirla como una constante:
+            const cajonCubiertos = 'tenedor'; (claro que si siempre vas a guardar 'tenedor' es mejor llamar a la variable cajonTenedor)
+        El nombre const es confuso porque no es intuitivo pensar en en una variable como una constante, si es constante no cambia...
+        pero desde el punto de vista que sirve para almacenar algo que puedo utilizar en cualquier momento se comporta como el resto de las variables...
+        
+        Es importante que como no se puede modificar el valor de una const siempre hay que ponerselo en el momento de la definición, una variable
+        var o let podrías inicializarla sin nada pero no una const.
+
+	* Strings:
+        Los strings son básicamente cualquier cosa que pongas entre comillas (simples o dobles). Cuando sumás strings lo que hace
+        es unir esas cadenas de caracteres que están entre comillas. 
+
+	* Funciones (argumentos, `return`)
+        Las funciones son partes del código que ejecutan algo y devuelven algo. Siguiendo con el ejemplo de la cocina pongamos ahora una licuadora,
+        la función de la licuadora es licuar. Para poder hacer el licuado probablemente necesite algún ingrediente, los ingredientes serían los
+        argumentos que recibe tu función, luego de que la función se ejecuta obtendrías tu licuado.
+        Ejemplo:
+            var ingrediente1='bananas';
+            var ingrediente2='leche';
+            var ingrediente3='azúcar';
+            var ingrediente4='hielo';
+            function licuar(ingrediente1, ingrediente2, ingrediente3, ingrediente4){
+                var licuado = ingrediente1 + ingrediente2 + ingrediente3 + ingrediente4;  //imaginate que los rompió y mezcló todo
+                return licuado;
+            }
+        
+        ahora siempre que quiera hacer un licuado, basta con llamar a la fción con todos sus argumentos:
+        licuar(ingrediente1, ingrediente2, ingrediente3, ingrediente4);
+
+        No todas las funciones necesitan argumentos, si lo que quisieras es encender la tele, basta con encenderla, no hace falta nada más.
+
+	* Declaraciones `if`
+        Los if son condiciones, si pasa esto hacé esto otro, si no pasa esto pero pasa aquello, hacés esta acción y si no pasa nada hacé esto otro.
+        Se escriben así
+            if (pasa esto){
+                ejecuta esto
+            } else if ( pasa esto) {
+                ejecuta esto
+            } else {
+                ejecuta esto.
+            }
+            lo que tiene que pasar es una condición que se cumple (true) o no se cumple (false).
+	* Valores booleanos (`true`, `false`)
+        Son únicamente esos dos valores, verdadero o falso (true or false).

@@ -1,0 +1,37 @@
+For:
+    Es como si te tiraras de un tobogán con forma de bucle, la instrucción sería
+    desde: arriba; 
+    mientras: no llegues abajo;
+    avanzá de esta manera: deslizando;  //notar que las instrucciones del for se separan con punto y coma.
+
+    Mientras te deslizás: mantente acostado, boca arriba y con los pies hacia adelante.
+
+    Los podrías escribir así:
+    var altura; (la vamos a medir en metros, el tobogán está buenísimo)
+
+    for(altura 10;  altura<=0; altura--) //altura-- es igual a decir altura-1, es decir cada vez que vuelve le resta 1 a la altura.
+    {
+        deslizá //notar que lo que tenga que suceder mientras estés en el for va entre llaves {}
+    }
+
+    Es muy importante asegurarse que en algún momento el bucle (loop) se termine, nadie quiere un tobogán infinito!!
+
+
+&&, || y ! es bastante sencillo
+
+&& significa 'and' (y)
+    Por ejemplo => Si hoy no llueve y (&&) vuelvo temprano, podemos ir a tomar un halado. Se tienen que dar las dos condiciones, es decir, 
+    las dos tienen que ser true. Si llueve o (||) no vuelvo temprano, nos quedamos sin helado.
+
+Tenemos que mejorar eso, el helado es indispensable
+||
+    Si no llueve o vuelvo temprano => tomamos un helado, dicho de otro modo, 
+        si no llueve independientemente de la hora en que vuelva => tomamos helado
+        si yo vuelvo temprano independientemente de que llueva o no => tomamos el helado
+    Si se cumple cualquiera de las dos condiciones => tomamos el helado. Eso sí, una de las dos se tiene que cumplir 
+    (una tiene que ser verdadera, true)
+    Si llueve y vuelvo tarde, lo siento, el helado quedará para otro día.
+
+! el signo de exclamación de cierre, puesto adelante de algo, es negar ese algo.
+    Por ejemplo en vez de escribir si no llueve puedo poner si !llueve
+    o en vez de decir: no vuelvo temprano puedo poner !vuelvo temprano
